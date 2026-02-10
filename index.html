@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le Quattro Equazioni di Maxwell</title>
+        <style>
+            /* Font e colori generali */
+            body {
+                font-family: "Georgia", serif;
+                background: linear-gradient(to bottom, #f5f0eb, #fffafa);
+                color: #4a3f35;
+                margin: 0;
+                padding: 0 20px;
+                line-height: 1.6;
+            }
+
+            /* Contenitore centrale */
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            /* Titoli */
+            h1 {
+                text-align: center;
+                color: #a16d5c;
+                font-size: 2.8em;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                color: #b17c6b;
+                border-bottom: 2px solid #f6d1d1;
+                padding-bottom: 5px;
+                margin-top: 40px;
+            }
+
+            h3 {
+                color: #c18b78;
+                margin-top: 30px;
+            }
+
+            h4 {
+                color: #d19a87;
+                margin-top: 20px;
+            }
+
+            /* Separatore */
+            hr {
+                border: none;
+                border-top: 2px solid #f6d1d1;
+                margin: 30px 0;
+            }
+
+            /* Paragrafi */
+            p {
+                margin-bottom: 15px;
+            }
+
+            /* Liste */
+            ul {
+                margin: 10px 0 20px 20px;
+            }
+
+            /* Tabelle */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+
+            th,
+            td {
+                border: 1px solid #e7cfc1;
+                padding: 12px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #f6d1d1;
+            }
+
+            tr:nth-child(even) {
+                background-color: #fff0f0;
+            }
+
+            /* Evidenziazioni */
+            strong {
+                color: #a16d5c;
+            }
+
+            em {
+                color: #b17c6b;
+            }
+
+            /* Blocchi evidenziati */
+            .note {
+                background-color: #fdeaea;
+                padding: 15px;
+                border-left: 5px solid #f6b6b6;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Le Quattro Equazioni di Maxwell</h1>
+
+            <div style="text-align: center; margin-bottom: 30px">
+                <img
+                    src="mwah.jpg"
+                    alt="Immagine Maxwell"
+                    style="max-width: 200px; height: auto; border-radius: 10px"
+                />
+            </div>
+
+            <p>
+                La <strong>prima equazione di Maxwell</strong>, nota anche come
+                <strong>Legge di Gauss per il campo elettrico</strong>, è uno
+                dei pilastri dell'elettromagnetismo. In parole povere, descrive
+                come le cariche elettriche generano un campo elettrico.
+            </p>
+
+            <p>Ecco i concetti chiave spiegati in modo semplice e rigoroso.</p>
+
+            <hr />
+
+            <h2>Il concetto fondamentale</h2>
+            <p>
+                L'equazione stabilisce che le cariche elettriche sono le
+                <strong>sorgenti</strong> (se positive) o i
+                <strong>pozzi</strong> (se negative) del campo elettrico.
+            </p>
+            <p>
+                Immagina il campo elettrico come un flusso d'acqua: una carica
+                positiva è come un rubinetto aperto che spruzza acqua verso
+                l'esterno, mentre una carica negativa è come uno scarico che la
+                assorbe.
+            </p>
+
+            <h2>Le due forme dell'equazione</h2>
+            <h3>1. Forma Integrale</h3>
+            <p>
+                Si usa per calcolare il campo elettrico totale che attraversa
+                una superficie chiusa (chiamata superficie gaussiana).
+            </p>
+            <div class="note">
+                <ul>
+                    <li>
+                        <strong>Φ<sub>E</sub></strong
+                        >: Rappresenta il <strong>flusso</strong> del campo
+                        elettrico attraverso la superficie chiusa.
+                    </li>
+                    <li>
+                        <strong>Q<sub>int</sub></strong
+                        >: È la carica totale contenuta all'interno di quella
+                        superficie.
+                    </li>
+                    <li>
+                        <strong>ε<sub>0</sub></strong
+                        >: È la costante dielettrica del vuoto.
+                    </li>
+                </ul>
+                <p>
+                    <em>Cosa ci dice?</em> Il flusso totale del campo elettrico
+                    attraverso una superficie chiusa dipende solo da quanta
+                    carica c'è dentro. Se non c'è carica all'interno, tanto
+                    campo entra quanto ne esce (flusso netto zero).
+                </p>
+            </div>
+
+            <h3>2. Forma Differenziale</h3>
+            <div class="note">
+                <ul>
+                    <li>
+                        <strong>∇·E</strong>: È la
+                        <strong>divergenza</strong> del campo elettrico. Indica
+                        quanto il campo "nasce" o "muore" in un punto.
+                    </li>
+                    <li>
+                        <strong>ρ/ε<sub>0</sub></strong
+                        >: È la densità di carica elettrica in quel punto.
+                    </li>
+                </ul>
+                <p>
+                    <em>Cosa ci dice?</em> Se in un punto c'è una densità di
+                    carica positiva, la divergenza è positiva (le linee di campo
+                    partono da lì). Se la densità è negativa, la divergenza è
+                    negativa (le linee convergono lì).
+                </p>
+            </div>
+
+            <hr />
+
+            <h2>In sintesi: Perché è importante?</h2>
+            <ul>
+                <li>
+                    <strong>Conferma la Legge di Coulomb</strong>: La prima
+                    equazione di Maxwell è la generalizzazione della legge che
+                    descrive la forza tra due cariche.
+                </li>
+                <li>
+                    <strong>Linee di campo aperte</strong>: Le linee del campo
+                    elettrico hanno un inizio e una fine: partono dalle cariche
+                    positive e finiscono su quelle negative.
+                </li>
+                <li>
+                    <strong>Esistenza dei monopoli</strong>: Questa legge
+                    ammette l'esistenza del "monopolo elettrico" (una singola
+                    carica isolata), cosa che non avviene per il magnetismo.
+                </li>
+            </ul>
+
+            <hr />
+
+            <h1>Seconda equazione di Maxwell</h1>
+            <p>
+                Nota come <strong>Legge di Gauss per il magnetismo</strong>, è
+                forse la più affascinante per quello che "nega" piuttosto che
+                per quello che "afferma".
+            </p>
+
+            <h2>Il concetto fondamentale: Il magnete indivisibile</h2>
+            <p>
+                Non esistono "cariche magnetiche" isolate (monopoli magnetici).
+                Se prendi una calamita e la tagli a metà, otterrai due calamite
+                più piccole, ciascuna con Nord e Sud.
+            </p>
+
+            <h2>Le due forme dell'equazione</h2>
+            <h3>1. Forma Integrale</h3>
+            <div class="note">
+                <ul>
+                    <li><strong>B</strong>: È il vettore campo magnetico.</li>
+                    <li>
+                        Flusso totale attraverso qualsiasi superficie chiusa è
+                        <strong>zero</strong>.
+                    </li>
+                </ul>
+                <p>
+                    <em>Cosa ci dice?</em> Le linee di campo "escono" e
+                    "rientrano" bilanciando il flusso netto a zero.
+                </p>
+            </div>
+
+            <h3>2. Forma Differenziale</h3>
+            <div class="note">
+                <ul>
+                    <li>
+                        <strong>∇·B = 0</strong>: Divergenza del campo magnetico
+                        nulla.
+                    </li>
+                </ul>
+                <p>
+                    <em>Cosa ci dice?</em> Le linee di forza del campo magnetico
+                    sono sempre chiuse; nessun punto genera o annienta il campo.
+                </p>
+            </div>
+
+            <hr />
+
+            <h2>Confronto rapido</h2>
+            <table>
+                <tr>
+                    <th>Caratteristica</th>
+                    <th>Campo Elettrico (E)</th>
+                    <th>Campo Magnetico (B)</th>
+                </tr>
+                <tr>
+                    <td><strong>Sorgente</strong></td>
+                    <td>Carica elettrica (ρ)</td>
+                    <td>Correnti o dipoli</td>
+                </tr>
+                <tr>
+                    <td><strong>Monopoli</strong></td>
+                    <td>Esistono (es. elettrone)</td>
+                    <td><strong>Non esistono</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Flusso netto</strong></td>
+                    <td>Proporzionale alla carica</td>
+                    <td><strong>Sempre Zero</strong></td>
+                </tr>
+            </table>
+
+            <hr />
+
+            <h1>Terza equazione di Maxwell</h1>
+            <p>
+                La <strong>Legge di Faraday-Neumann-Lenz</strong> spiega come il
+                magnetismo può generare elettricità.
+            </p>
+
+            <h2>Il concetto fondamentale: L'induzione</h2>
+            <p>
+                Un campo magnetico che varia nel tempo crea un campo elettrico
+                "a vortice", alla base di dinamo, motori elettrici e caricatori
+                wireless.
+            </p>
+
+            <h2>Le due forme dell'equazione</h2>
+            <h3>1. Forma Integrale</h3>
+            <div class="note">
+                <ul>
+                    <li>
+                        <strong>fem</strong>: Forza elettromotrice indotta lungo
+                        un percorso chiuso.
+                    </li>
+                    <li>Variazione nel tempo del flusso magnetico.</li>
+                    <li>
+                        Il segno meno indica la Legge di Lenz (la corrente si
+                        oppone alla variazione).
+                    </li>
+                </ul>
+            </div>
+
+            <h3>2. Forma Differenziale</h3>
+            <div class="note">
+                <ul>
+                    <li><strong>∇×E</strong>: Rotore del campo elettrico.</li>
+                    <li>Indica la variazione temporale del campo magnetico.</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <h1>Quarta equazione di Maxwell</h1>
+            <p>
+                Nota come <strong>Legge di Ampère-Maxwell</strong>, descrive
+                come l'elettricità genera magnetismo e completa il quadro delle
+                onde elettromagnetiche.
+            </p>
+
+            <h2>Il "tocco magico" di Maxwell</h2>
+            <p>
+                Aggiungendo il termine della
+                <strong>corrente di spostamento</strong>, Maxwell dimostrò che
+                anche un campo elettrico variabile genera un campo magnetico,
+                permettendo l’esistenza della luce.
+            </p>
+
+            <h2>Le due forme dell'equazione</h2>
+            <h3>1. Forma Integrale</h3>
+            <div class="note">
+                <ul>
+                    <li>
+                        Circolazione del campo magnetico lungo un percorso
+                        chiuso.
+                    </li>
+                    <li>
+                        Corrente elettrica classica + variazione del flusso
+                        elettrico.
+                    </li>
+                </ul>
+            </div>
+
+            <h3>2. Forma Differenziale</h3>
+            <div class="note">
+                <ul>
+                    <li>Rotore del campo magnetico.</li>
+                    <li>Densità di corrente elettrica.</li>
+                    <li>Variazione del campo elettrico in un punto.</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <h2>Simulatore di onde elettromagnetiche</h2>
+            <p>
+                Qui puoi vedere una rappresentazione semplice delle onde
+                elettriche e magnetiche che si propagano nello spazio.
+            </p>
+
+            <div
+                id="wave-simulator"
+                style="
+                    position: relative;
+                    width: 100%;
+                    height: 200px;
+                    background: #fff8f5;
+                    border: 2px solid #f6d1d1;
+                    border-radius: 10px;
+                    overflow: hidden;
+                "
+            ></div>
+
+            <script>
+                const canvasDiv = document.getElementById("wave-simulator");
+                const width = canvasDiv.offsetWidth;
+                const height = canvasDiv.offsetHeight;
+
+                const canvas = document.createElement("canvas");
+                canvas.width = width;
+                canvas.height = height;
+                canvasDiv.appendChild(canvas);
+                const ctx = canvas.getContext("2d");
+
+                let t = 0;
+
+                function drawWave() {
+                    ctx.clearRect(0, 0, width, height);
+
+                    ctx.lineWidth = 3;
+
+                    // Onde elettriche (rosa chiaro)
+                    ctx.strokeStyle = "#f6d1d1";
+                    ctx.beginPath();
+                    for (let x = 0; x < width; x++) {
+                        let y =
+                            height / 2 -
+                            40 * Math.sin((x / width) * 4 * Math.PI - t);
+                        ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
+
+                    // Onde magnetiche (marroncino chiaro)
+                    ctx.strokeStyle = "#a16d5c";
+                    ctx.beginPath();
+                    for (let x = 0; x < width; x++) {
+                        let y =
+                            height / 2 +
+                            40 * Math.cos((x / width) * 4 * Math.PI - t);
+                        ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
+
+                    t += 0.05;
+                    requestAnimationFrame(drawWave);
+                }
+
+                drawWave();
+            </script>
+
+            <hr />
+        </div>
+    </body>
+</html>
