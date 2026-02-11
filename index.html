@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Le Quattro Equazioni di Maxwell</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
         <style>
             /* Font e colori generali */
             body {
@@ -432,6 +438,374 @@
 
                 drawWave();
             </script>
+
+            <div style="text-align: center; margin-bottom: 30px">
+                <img
+                    src="mwahmwah.jpg"
+                    alt="Immagine Maxwell"
+                    style="max-width: 200px; height: auto; border-radius: 10px"
+                />
+            </div>
+
+            <div class="container">
+                <hr />
+
+                <h2>Induzione Elettromagnetica</h2>
+
+                <p>
+                    In parole semplici:
+                    <strong>l'induzione elettromagnetica</strong> è il processo
+                    attraverso il quale si genera una corrente elettrica in un
+                    conduttore muovendolo all'interno di un campo magnetico (o
+                    variando il campo magnetico attorno ad esso).
+                </p>
+
+                <h3>1. La scoperta: Faraday e l'intuizione</h3>
+                <p>
+                    Nel 1831, <strong>Michael Faraday</strong> scoprì che non è
+                    il magnetismo in sé a creare elettricità, ma la sua
+                    <em>variazione</em>.
+                </p>
+                <p>
+                    Se prendi una calamita e la tieni ferma vicino a un filo di
+                    rame, non succede nulla. Ma se muovi la calamita velocemente
+                    avanti e indietro dentro una bobina di filo, vedrai scorrere
+                    della corrente. Hai appena trasformato
+                    <strong>energia meccanica</strong> (il movimento della mano)
+                    in <strong>energia elettrica</strong>.
+                </p>
+
+                <h3>2. Il concetto di Flusso Magnetico ($\Phi$)</h3>
+                <p>
+                    Per capire "quanta" elettricità produciamo, dobbiamo parlare
+                    di <strong>flusso magnetico</strong>. Immagina il campo
+                    magnetico come un soffio di vento e la bobina di filo come
+                    un retino per farfalle.
+                </p>
+
+                <ul>
+                    <li>
+                        Se il retino è rivolto verso il vento, cattura molto
+                        flusso.
+                    </li>
+                    <li>Se lo giri di lato, non cattura nulla.</li>
+                </ul>
+
+                <p>
+                    L'induzione avviene ogni volta che il numero di "linee di
+                    campo" che attraversano il retino cambia nel tempo.
+                </p>
+
+                <h3>3. Le Leggi Fondamentali</h3>
+
+                <h4>Legge di Faraday-Neumann</h4>
+                <p>
+                    Stabilisce che la
+                    <strong>forza elettromotrice</strong> $$\mathcal{E}$$
+                    indotta è proporzionale alla rapidità con cui cambia il
+                    flusso magnetico:
+                </p>
+
+                <div class="note">
+                    <p style="text-align: center">
+                        $$\mathcal{E} = - \frac{\Delta \Phi}{\Delta t}$$
+                    </p>
+                </div>
+
+                <h4>Legge di Lenz (il segno "meno")</h4>
+                <p>
+                    Questa è la parte più affascinante. La natura è
+                    "conservatrice": la corrente indotta crea a sua volta un
+                    campo magnetico che si oppone alla variazione che l'ha
+                    generata.
+                </p>
+
+                <ul>
+                    <li>
+                        Se cerchi di infilare un magnete in una bobina, la
+                        bobina genererà un campo magnetico per
+                        <strong>respingerlo</strong>.
+                    </li>
+                    <li>
+                        Se cerchi di estrarlo, la bobina cercherà di
+                        <strong>trattenerlo</strong>.
+                    </li>
+                </ul>
+
+                <h3>4. Applicazioni nel mondo reale</h3>
+                <p>
+                    L'induzione elettromagnetica non è solo teoria; è ovunque:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Generatori e Centrali Elettriche:</strong>
+                        Grandi turbine fanno ruotare magneti vicino a bobine per
+                        produrre l'elettricità che arriva a casa tua.
+                    </li>
+                    <li>
+                        <strong>Fornelli a Induzione:</strong> Creano campi
+                        magnetici variabili che fanno scaldare direttamente il
+                        metallo della pentola (senza fiamma!).
+                    </li>
+                    <li>
+                        <strong>Ricarica Wireless:</strong> Il tuo smartphone
+                        riceve energia da una base grazie a un campo magnetico
+                        variabile tra due bobine vicine.
+                    </li>
+                    <li>
+                        <strong>Microfoni e Chitarre Elettriche:</strong>
+                        Trasformano le vibrazioni meccaniche (voce o corde) in
+                        segnali elettrici.
+                    </li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 30px">
+                <img
+                    src="mwahmwahmwah.jpg"
+                    alt="Immagine Maxwell"
+                    style="max-width: 200px; height: auto; border-radius: 10px"
+                />
+            </div>
+
+            <hr />
+
+            <h2>Induzione elettromagnetica - teorie aggiunte</h2>
+
+            <h3>1. Introduzione</h3>
+            <p>
+                Una <strong>variazione del flusso magnetico</strong> attraverso
+                un circuito induce una corrente. Scoperto da
+                <strong>Faraday (1831)</strong>, è una delle basi
+                dell’elettromagnetismo classico.
+            </p>
+
+            <p>
+                Esempio intuitivo: magnete che entra/esce da una bobina →
+                corrente indotta.
+            </p>
+
+            <ul>
+                <li>Generatori</li>
+                <li>Trasformatori</li>
+                <li>Freni elettromagnetici</li>
+                <li>Ricarica wireless</li>
+            </ul>
+
+            <hr />
+
+            <h3>2. Effetto Hall (3.1)</h3>
+
+            <p>
+                Le cariche in moto in un campo magnetico subiscono la forza di
+                Lorentz:
+            </p>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathbf{F} = q \mathbf{v} \times \mathbf{B} $$
+                </p>
+            </div>
+
+            <p>Condizione di equilibrio:</p>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ qE = qvB \Rightarrow E = vB $$
+                </p>
+            </div>
+
+            <p>Differenza di potenziale:</p>
+
+            <div class="note">
+                <p style="text-align: center">$$ \Delta V = E L = vBL $$</p>
+            </div>
+
+            <hr />
+
+            <h3>3. Dall’effetto Hall alla legge di Faraday-Neumann (3.2)</h3>
+
+            <div class="note">
+                <p style="text-align: center">$$ \mathcal{E} = vBL $$</p>
+            </div>
+
+            <p>Area del circuito:</p>
+
+            <div class="note">
+                <p style="text-align: center">$$ A = Lx $$</p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E} = BL \frac{\Delta x}{\Delta t} = \frac{\Delta
+                    (BA)}{\Delta t} = \frac{\Delta \Phi_B}{\Delta t} $$
+                </p>
+            </div>
+
+            <p><strong>Legge di Faraday-Neumann:</strong></p>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E} = \frac{\Delta \Phi_B}{\Delta t} $$
+                </p>
+            </div>
+
+            <h4>3.1 Legge di Lenz (3.2.1)</h4>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E} = - \frac{\Delta \Phi_B}{\Delta t} $$
+                </p>
+            </div>
+
+            <h4>3.2 Forma differenziale (3.2.2)</h4>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E} = - \frac{d\Phi_B}{dt} $$
+                </p>
+            </div>
+
+            <hr />
+
+            <h3>5. Alternatore (3.4)</h3>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \Phi_B(t) = BA \cos(\omega t) $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E}(t) = -\frac{d\Phi_B}{dt} = BA\omega
+                    \sin(\omega t) $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E}(t) = NBA\omega \sin(\omega t) = \mathcal{E}_0
+                    \sin(\omega t) $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E}_0 = NBA\omega $$
+                </p>
+            </div>
+
+            <hr />
+
+            <h3>6. Corrente alternata su carico resistivo (3.5)</h3>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ I(t) = \frac{\mathcal{E}(t)}{R} = \frac{\mathcal{E}_0}{R}
+                    \sin(\omega t) = I_0 \sin(\omega t) $$
+                </p>
+            </div>
+
+            <hr />
+
+            <h3>7. Potenza in corrente alternata (3.6)</h3>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ P(t) = \mathcal{E}_0 I_0 \sin^2(\omega t) $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ P_{med} = \frac{\mathcal{E}_0 I_0}{2} $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E}_{eff} = \frac{\mathcal{E}_0}{\sqrt{2}}, \quad
+                    I_{eff} = \frac{I_0}{\sqrt{2}} $$
+                </p>
+            </div>
+
+            <hr />
+
+            <h3>8. Autoinduzione e induttanza (3.7)</h3>
+
+            <div class="note">
+                <p style="text-align: center">$$ \Phi_B = L I $$</p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \mathcal{E} = - L \frac{dI}{dt} $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ L = \mu \frac{N^2 A}{\ell} $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">$$ U = \frac{1}{2} L I^2 $$</p>
+            </div>
+
+            <hr />
+
+            <h3>9. Circuiti in corrente alternata (3.8)</h3>
+
+            <div class="note">
+                <p style="text-align: center">$$ X_L = \omega L $$</p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">$$ X_C = \frac{1}{\omega C} $$</p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ Z = R + i\left(\omega L - \frac{1}{\omega C}\right) $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ |Z| = \sqrt{R^2 + \left(\omega L - \frac{1}{\omega
+                    C}\right)^2} $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \varphi = \arctan\left(\frac{\omega L - \frac{1}{\omega
+                    C}}{R}\right) $$
+                </p>
+            </div>
+
+            <hr />
+
+            <h3>10. Trasformatore (3.9)</h3>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \frac{V_2}{V_1} = \frac{N_2}{N_1} $$
+                </p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">$$ V_1 I_1 = V_2 I_2 $$</p>
+            </div>
+
+            <div class="note">
+                <p style="text-align: center">
+                    $$ \frac{I_2}{I_1} = \frac{N_1}{N_2} $$
+                </p>
+            </div>
 
             <hr />
         </div>
